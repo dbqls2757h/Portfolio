@@ -1,0 +1,265 @@
+/* 공통영역 */
+#wrap{
+    width: 100%;
+    overflow: hidden;
+    /* background-color: lightblue; */
+}
+
+.container{
+    width: 1200px;
+    /* background-color: lightgray; */
+    margin: 0 auto;
+    position: relative;
+}
+/* 공통영역 end */
+
+/* header start */
+#header{
+    width: 100%;
+    height: 100px;
+    /* background-color: lightyellow; */
+    position: relative;
+}
+
+#up_menu{
+    width: 100%;
+    height: 30px;
+    /* background-color: lightpink; */
+    position: relative;
+}
+
+#login_wrap{
+    float: right;
+    padding-top: 5px;
+}
+
+#login_wrap li{
+    float: left;
+    font-size: 14px;
+    padding: 0 15px;
+    position: relative;
+}
+
+#login_wrap li::after{
+    content: '|';
+    position: absolute;
+    left: -3px;
+}
+
+#login_wrap li:nth-child(1):after{
+    display: none;
+}
+
+#down_menu{
+    width: 100%;
+    height: 70px;
+    /* background-color: darkseagreen; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 144px;
+    height: 24px;
+    background-image: url(../img/img_logo.png);
+}
+
+#main_menu{
+    width: 850px;
+    height: 70px;
+    /* background-color: lightyellow; */
+    position: absolute;
+    right: 150px;
+}
+
+#main_menu>li{
+    width: 170px;
+    height: 70px;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 900;
+    position: relative;
+}
+
+#main_menu>li::after{
+    /* width: 100%; */
+    width: 0;
+    height: 5px;
+    background-color: crimson;
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+
+#main_menu>li:hover::after{
+    width: 100%;
+    /* transition-duration: 1s; */
+}
+
+#zoom_btn{
+    width: 90px;
+    height: 28px;
+    position: absolute;
+    right: 50px;
+    /* background-color: khaki; */
+}
+
+#zoom{
+    width: 27px;
+    height: 28px;
+    background-image: url(../img/ico-sch.png);
+    border: 1px solid white;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+    float: left;
+}
+
+#ham_btn{
+    width: 27px;
+    height: 28px;
+    background-image: url(../img/ico-total.png);
+    border: 1px solid white;
+    cursor: pointer;
+    float: left;
+}
+
+/* section1 start */
+#sec1{
+    width: 100%;
+    height: auto;
+    /* background-color: thistle; */
+    margin-top: 50px;
+}
+
+#search_box{
+    width: 300px;
+    height: 30px;
+    background-color: midnightblue;
+}
+
+#search_box input{
+    width: 270px;
+    height: 30px;
+    background-color: lightsteelblue;
+    float: left;
+    border: 0;
+    outline: none;
+}
+
+#search_icon{
+    width: 30px;
+    height: 30px;
+    background-color: midnightblue;
+    float: left;
+}
+
+#slide_box{
+    width: 100%;
+    height: 545px;
+    position: relative;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    background-color: palegoldenrod;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#slide1{
+    background-image: url(../img/001.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#slide2{
+    background-image: url(../img/002.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#slide3{
+    background-image: url(../img/003.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#btn_wrap{
+    width: 100%;
+    height: 10px;
+    /* background-color: gray; */
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex부모의 자식들을 위아래 중앙정렬 시킬 경우 익스플로러의 direction 지정필요
+    chrome의 경우 상관x */
+    flex-direction: column;
+}
+
+#btn_wrap>ul{
+    /* 부모 태그 사이즈를 자식태그의 너비의 총 합에 맞추기 위함 */
+    display: inline-block;
+    /* background-color: lightsalmon; */
+}
+
+.slide_btn{
+    width: 150px;
+    height: 10px;
+    background-color: gray;
+    float: left;
+    margin-left: 15px;
+}
+
+.slide_btn:first-child{
+    margin-left: 0;
+}
+
+.btn_on{
+    background-color: gold;
+}
+
+
+/* section2 start */
+#sec2{
+    width: 100%;
+    height: 700px;
+    background-color: lightskyblue;
+    position: relative;
+    margin-top: 100px;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#sec2_menu{
+    width: 700px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec2_menu>li{
+    height: 30px;
+    line-height: 30px;
+}
+
+.sec2_menu_on{
+    text-decoration: underline;
+}
+
+
+

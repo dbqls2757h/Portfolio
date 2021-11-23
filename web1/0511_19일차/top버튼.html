@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+        var ww = $(window).width();
+        var wh = $(window).height();
+
+        $('#wrap, header, section').css({
+            width: ww,
+        });
+
+        var bg=['lightgray', 'lightpink', 'lightyellow', 'lightblue', 'thistle'];
+        $('section').css({
+            height: wh,
+            backgroundColor: function(index){
+                return bg[index];
+            }
+        });
+
+
+        //scollTop: 선택한 요소의 스크롤바 수직 위치를 반환하거나 스크롤바 수직 위치를 정해줌
+        $('#up').click(function(){
+            $('html, body').animate({
+                scrollTop: 0
+            },500);
+        });
+
+        //~위치에 오면 top버튼 보이게
+        $(window).scroll(function(){
+           var sct = $(window).scrollTop();
+           var hh = $('header').height(); 
+        
+
+        //스크롤바 위치가 100보다 커지면
+        if(sct>hh){
+            $('#up').css({
+                opacity: 1,
+            });
+        }
+
+
+        //스크롤바 위치가 100보다 작아지면
+        else if(sct<hh){
+            $('#up').css({
+                opacity: 0,
+            });
+        }
+        
+
+        });
+
+
+        });
+        // end
+       
+    </script>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none; color: #292929;}
+
+
+        #wrap{
+            overflow: hidden;
+            background-color: lightblue;
+        }
+
+        header{
+            height: 100px;
+            background-color: lightcoral;
+            line-height: 100px;
+        }
+
+        .menu{
+            width: 80%;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            margin: 0 auto;
+        }
+
+        .menu li{
+            width: 25%;
+            height: 100%;
+            float: left;
+            text-align: center;
+        }
+
+        #up{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-color: crimson;
+            opacity: 0;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+        
+        section{
+            text-align: center;
+            font-size: 100px;
+            font-weight: 900;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+
+        <header>
+            <ul class="menu">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+            </ul>
+        </header>
+
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <div id="up">▲</div>
+
+    </div>
+            
+</body>
+</html>

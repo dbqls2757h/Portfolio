@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB생명보험</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/> 
+    <link href="css/pc.css" rel="stylesheet" type="text/css"/> 
+    <link href="css/tab.css" rel="stylesheet" type="text/css"/> 
+    <link href="css/mobile.css" rel="stylesheet" type="text/css"/>
+    <!-- 웹폰트 연결 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <!-- header start! -->
+<header id="header">
+    <!-- 1200px 영역 가운데 정렬 -->
+<div class="container">
+
+<!-- 작은메뉴 -->
+<nav id="up_menu">
+    <ul id="login_wrap">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">인증센터</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">채용</a></li>
+        <li><a href="#">소비자포털</a></li>
+        <li><a href="#">공시실</a></li>
+    </ul>
+</nav>
+
+<!-- 큰메뉴 -->
+<nav id="down_menu">
+
+<!-- 로고 -->
+<div id="logo"></div>
+
+<!-- 메인메뉴 -->
+<ul id="main_menu">
+    <li><a href="#">보험상품</a></li>
+    <li><a href="#">온라인보험</a></li>
+    <li><a href="#">나의KB생명</a></li>
+    <li><a href="#">KB라이프</a></li>
+    <li><a href="#">고객센터</a></li>
+</ul>
+<!-- 숨김메뉴 돋보기 버튼 -->
+<div id="zoom_btn">
+<button id="zoom"></button>
+<button id="ham_btn"></button>
+</div>
+</nav>
+</div>
+</header>
+
+        <!-- sec1 slide start! -->
+<section id="sec1">
+
+    <!-- 1200px 가운데 정렬 -->
+<div class="container">
+<div id="search_box">
+    <input type="text" placeholder="검색어를 입력하세요.">
+    <div id="search_icon"></div>
+</div>
+
+<div id="slide_box">
+<div class="slide" id="slide1"></div>
+<div class="slide" id="slide2"></div>
+<div class="slide" id="slide3"></div>
+
+<!-- btn_wrap를 ul태그로 감싼 이유 : btn_wrap의 너비를 100%잡고,
+flex로 자식ul태그를 중앙정렬 시키면
+=> position으로 좌우 위치 잡을 필요 없이 left: 0 쓰면 됨
+=> slide_btn 갯수가 늘어나거나 사이즈 변경 되어도 매번 좌우 중앙정렬 맞추지 않아도 됨! -->
+<div id="btn_wrap">
+<ul>
+    <li class="slide_btn btn_on"></li>
+    <li class="slide_btn"></li>
+    <li class="slide_btn"></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</section>
+
+        <!-- sec2 start! -->
+<section id="sec2">
+    <!-- 1200px 가운데 정렬값 -->
+    <div class="container">
+        <span class="name">상품</span>
+        <ul id="sec2_menu">
+            <li class="sec2_menu_on">추천보험</li>
+            <li>연금보험</li>
+            <li>변액보험</li>
+            <li>종신/정기보험</li>
+            <li>건강/상해보험</li>
+            <li>온라인보험</li>
+        </ul>
+
+<div id="sec2_slide_box">
+
+    <!-- 추천보험 내용 -->
+<div class="sec2_slide" id="sec2_slide_1">
+<div class="sec2_slide_img"><img src="img/sec2_img1.png" alt="이미지1"></div>
+<div class="sec2_txt_box">
+    <div class="sec2_txt_1">온라인보험</div>
+    <p>KB생명보험에서<br/>주목하는 정기보험</p>
+    <span class="sec2_mid_name">무)KB착한정기보험2</span>
+    <span class="sec2_detail">합리적인 보험료! 실속있는 보장! 
+        <br /> 건강할수록 보험료 추가 할인!</span>
+        <div class="sec2_btn_wrap">
+            <div class="sec2_btn">자세히 보기</div>
+            <div class="sec2_btn">전체 상품 더보기</div>
+        </div>
+</div>
+</div>
+
+<div class="sec2_slide" id="sec2_slide_2">
+    <div class="sec2_slide_img"><img src="img/sec2_img2.png" /></div>
+    <div class="sec2_txt_box">
+        <!--                    <span>온라인보험</span>-->
+        <p>무)KB골든라이프<br />플래티넘연금보험2</p>
+        <!--                    <span class="sec2_mid_name"></span>-->
+        <span class="sec2_detail">저축과 연금이 만나<br />기쁨 2배 행복 2배</span>
+        <div class="sec2_btn_wrap">
+            <div class="sec2_btn sec2_btn_on">자세히 보기</div>
+            <div class="sec2_btn">전체 상품 더보기</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="sec2_slide" id="sec2_slide_3">
+    <div class="sec2_slide_img"><img src="img/sec2_img3.png" /></div>
+    <div class="sec2_txt_box">
+        <!--                    <span>온라인보험</span>-->
+        <p>보증의힘(무)KB변액<br />연금보험</p>
+        <!--                    <span class="sec2_mid_name">무)KB착한정기보험2</span>-->
+        <span class="sec2_detail">최저 연금소득 보증으로 흔들림없는 <br />노후준비가 가능합니다.</span>
+        <div class="sec2_btn_wrap">
+            <div class="sec2_btn sec2_btn_on">자세히 보기</div>
+            <div class="sec2_btn">전체 상품 더보기</div>
+        </div>
+    </div>
+</div>
+
+<div class="sec2_slide" id="sec2_slide_4">
+    <div class="sec2_slide_img"><img src="img/sec2_img4.png" /></div>
+    <div class="sec2_txt_box">
+        <span class="sec2_txt_1">온라인보험</span>
+        <p>KB생명보험에서<br />주목하는 정기보험</p>
+        <span class="sec2_mid_name">무)KB착한정기보험2</span>
+        <span class="sec2_detail">합리적인 보험료! 실속있는 보장! <br /> 건강할수록 보험료 추가 할인!</span>
+        <div class="sec2_btn_wrap">
+            <div class="sec2_btn sec2_btn_on">자세히 보기</div>
+            <div class="sec2_btn">전체 상품 더보기</div>
+        </div>
+    </div>
+</div>
+
+<div class="sec2_slide" id="sec2_slide_5">
+    <div class="sec2_slide_img"><img src="img/sec2_img5.png" /></div>
+    <div class="sec2_txt_box">
+        <!--                    <span>온라인보험</span>-->
+        <p>KB,[약:속]종신보험<br />무배당(해지환급금<br />과소지급형)</p>
+        <!--                    <span class="sec2_mid_name">무)KB착한정기보험2</span>-->
+        <span class="sec2_detail">보험료 납입기간 완료시 해지환급금<br />100%를 확정해 주는 종신보험</span>
+        <div class="sec2_btn_wrap">
+            <div class="sec2_btn sec2_btn_on">자세히 보기</div>
+            <div class="sec2_btn">전체 상품 더보기</div>
+        </div>
+    </div>
+</div>
+
+<div class="sec2_slide" id="sec2_slide_6">
+    <div class="sec2_slide_img"><img src="img/sec2_img6.png" /></div>
+    <div class="sec2_txt_box">
+        <!--                    <span>온라인보험</span>-->
+        <p>무)KB국민간편<br />건강보험(갱신형)</p>
+        <!--                    <span class="sec2_mid_name">무)KB착한정기보험2</span>-->
+        <span class="sec2_detail">나이 많고 병 있어도<br />가입가능한 건강보험</span>
+        <div class="sec2_btn_wrap">
+            <div class="sec2_btn sec2_btn_on">자세히 보기</div>
+            <div class="sec2_btn">전체 상품 더보기</div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+    </div>
+</section>
+
+        <!-- sec3 start! -->
+<section id="sec3">
+    <!-- 1200px 가운데 정렬값 -->
+<div class="container">
+<h1>KB스타클럽</h1>
+<span>KB금융그룹 고객님에게 차별화된 우대 서비스를 제공합니다.</span>
+
+<div id="sec3_box">
+<div class="sec3_inbox">
+    <div class="sec3_circle" id="sec3_icon1">
+    </div>
+    <div class="sec3_txt">
+        <span>KB스타클럽 조회</span>
+        <p>KB금융그룹과 KB생명보험<br/>등급을 확인하세요.</p>
+    </div>
+</div>
+<div class="sec3_inbox">
+    <div class="sec3_circle" id="sec3_icon2"></div>
+    <div class="sec3_txt">
+        <span>KB스타클럽 안내</span>
+        <p>KB금융그룹의 차별화된<br />우대 서비스를 제공받으세요.</p>
+    </div>
+</div>
+<div class="sec3_inbox">
+    <div class="sec3_circle" id="sec3_icon3"></div>
+    <div class="sec3_txt">
+        <span>KB마에스트로/<br />KB패밀리 서비스</span>
+        <p>KB금융그룹과의<br />다양한 혜택을 확인하세요.</p>
+    </div>
+</div>
+<div class="sec3_inbox">
+    <div class="sec3_circle" id="sec3_icon4"></div>
+    <div class="sec3_txt">
+        <span>KB스타드림 서비스</span>
+        <p>고객님의 취향대로<br />서비스를 선택하세요.</p>
+    </div>
+</div>
+
+</div>
+
+<div id="event_box">
+    <div class="in_event">
+        <img src="img/event1.png" alt="이벤트1" />
+    </div>
+    <div class="in_event" id="right_event">
+        <img src="img/event2.png" alt="이벤트2" />
+    </div>
+</div>
+
+
+
+
+</div>
+</section>
+
+        <!-- footer start! -->
+<footer id="footer">
+    <!-- 1200px 가운데정렬 -->
+    <div class="container">
+
+<ul id="foot_menu">
+    <li><a href="#">이용약관</a></li>
+    <li><a href="#">영상정보처리기기 운영방침</a></li>
+    <li><a href="#">개인정보처리방침</a></li>
+    <li><a href="#">온라인도우미</a></li>
+</ul>
+
+<div id="foot_txt">
+    <div id="copyright">
+        본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다. <br />
+        26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터:1577-1000 업무시간 : 09시~18시(월~금)<br />
+        Copyright @ 2020 National Health Insurance Service. All rights reserved.
+    </div>
+
+    <ul id="snswrap">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</div>
+    </div>
+</footer>
+
+<!-- 숨김메뉴 -->
+<div id="hidden_menu_wrap">
+<div id="hidden_menu_box">
+<div id="hidden_name_but">
+    <div class="hidden_name">전체메뉴</div>
+    <button>X</button>
+</div>
+
+<ul id="hidden_menu">
+<li>
+    보험상품
+    <ul class="hidden_sub_menu">
+        <li>메뉴1</li>
+        <li>메뉴1</li>
+        <li>메뉴1</li>
+        <li>메뉴1</li>
+        <li>메뉴1</li>
+    </ul>
+</li>
+<li>
+   온라인보험
+    <ul class="hidden_sub_menu">
+        <li>메뉴2</li>
+        <li>메뉴2</li>
+        <li>메뉴2</li>
+        <li>메뉴2</li>
+        <li>메뉴2</li>
+    </ul>
+</li>
+<li>
+    나의KB생명
+    <ul class="hidden_sub_menu">
+        <li>메뉴3</li>
+        <li>메뉴3</li>
+        <li>메뉴3</li>
+        <li>메뉴3</li>
+        <li>메뉴3</li>
+    </ul>
+</li>
+<li>
+    KB라이프
+    <ul class="hidden_sub_menu">
+        <li>메뉴4</li>
+        <li>메뉴4</li>
+        <li>메뉴4</li>
+        <li>메뉴4</li>
+        <li>메뉴4</li>
+    </ul>
+</li>
+<li>
+    고객센터
+    <ul class="hidden_sub_menu">
+        <li>메뉴5</li>
+        <li>메뉴5</li>
+        <li>메뉴5</li>
+        <li>메뉴5</li>
+        <li>메뉴5</li>
+    </ul>
+</li>
+</ul>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
