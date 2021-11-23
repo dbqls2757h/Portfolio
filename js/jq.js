@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     // section3 skill효과
     var sec3_h = $(".section3").height();
-    var scrollit = $(window).scrollTop() >= sec3_h;
+    var scrollit = $(window).scrollTop() >= sec3_h - 100;
 
     if (ww >= 1200) {
       if (scrollit) {
