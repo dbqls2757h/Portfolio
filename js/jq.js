@@ -21,7 +21,7 @@ $(document).ready(function(){
                     right: 30,
                     transform: 'rotate(0)',
                 });
-            }else if(ww<1200){
+            }else{
                 $('.mail').css({
                     top: 50,
                     right: 30,
@@ -54,35 +54,35 @@ $(document).ready(function(){
         var sec3_h = $('.section3').height();
         var scrollit = $(window).scrollTop() >= sec3_h;
 
-        if(ww>=1200){
-            if(scrollit){
-                $('.per90').animate({
-                    width: '66%'
-                },0.08);
-                $('.per85').animate({
-                    width: '64%'
-                },0.08);
-                $('.per80').animate({
-                    width: '62%'
-                },0.08);
-                $('.per75').animate({
-                    width: '60%'
-                },0.08);
-            }else{
-                $('.per90').animate({
-                    width: 0,
-                },0.03);
-                $('.per85').animate({
-                    width: 0
-                },0.03);
-                $('.per80').animate({
-                    width: 0
-                },0.03);
-                $('.per75').animate({
-                    width: 0
-                },0.03);
-            }
-        }
+//         if(ww>=1200){
+//             if(scrollit){
+//                 $('.per90').animate({
+//                     width: '66%'
+//                 },0.08);
+//                 $('.per85').animate({
+//                     width: '64%'
+//                 },0.08);
+//                 $('.per80').animate({
+//                     width: '62%'
+//                 },0.08);
+//                 $('.per75').animate({
+//                     width: '60%'
+//                 },0.08);
+//             }else{
+//                 $('.per90').animate({
+//                     width: 0,
+//                 },0.03);
+//                 $('.per85').animate({
+//                     width: 0
+//                 },0.03);
+//                 $('.per80').animate({
+//                     width: 0
+//                 },0.03);
+//                 $('.per75').animate({
+//                     width: 0
+//                 },0.03);
+//             }
+//         }
 
         if(sct<wh){
             $('.top_btn').css({
