@@ -136,7 +136,7 @@ $(document).ready(function () {
     var i = $(this).attr("data-a");
 
     $("html, body").animate({
-      scrollTop: wh + wh * i,
+      scrollTop: wh * i,
     });
 
     $(".top_header>li").removeClass("top_header_on");
