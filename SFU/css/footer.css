@@ -1,0 +1,35 @@
+footer {
+  width: 100%;
+}
+
+.in_footer {
+  padding: 70px;
+  box-sizing: border-box;
+  border-top: 0.5px solid #ebebeb;
+  color: #707070;
+}
+
+.in_footer h5 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.in_footer h6 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.in_footer p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #575757;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .in_footer {
+    padding: 20px;
+  }
+}

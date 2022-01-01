@@ -547,7 +547,7 @@
   }
 
   .sec3_left_con,
-  .sec3_right_con{
+  .sec3_right_con {
     font-weight: 300;
   }
 
@@ -876,6 +876,11 @@
     height: auto;
     font-size: 16px;
     color: #797979;
+  }
+
+  .sec5_txt2 span:nth-child(1)::after {
+    content: "|";
+    padding-left: 5px;
   }
 
   .sec5_con:hover span {

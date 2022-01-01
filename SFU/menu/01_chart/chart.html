@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu_01</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/main_con.css" />
+    <link rel="stylesheet" href="css/chart.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- material Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="menu">
+        <div class="profile">
+          <div class="pro_img">
+            <img src="../../images/ME.png" alt="profile_illust" />
+          </div>
+          <h5 class="info_1">dkfjwl_3</h5>
+          <p class="info_2">로그아웃 / 설정</p>
+        </div>
+
+        <ul class="list">
+          <li>
+            <a href="../../menu/01_chart/chart.html"
+              ><i class="far fa-chart-bar"></i>차트</a
+            >
+          </li>
+          <li>
+            <a href="../../menu/02_genre/genre.html">
+              <i class="fas fa-water"></i>장르</a
+            >
+          </li>
+          <li>
+            <a href="../../menu/03_artist/artist.html"
+              ><i class="far fa-comments"></i>아티스트talk</a
+            >
+          </li>
+          <li>
+            <a href="../../menu/04_playList/playList.html">
+              <i class="fas fa-headphones-alt"></i>내 플레이리스트</a
+            >
+          </li>
+          <li>
+            <a href="../../menu/05_intro/intro.html"
+              ><i class="fas fa-rainbow"></i>사이트 소개</a
+            >
+          </li>
+
+          <li class="use_1">
+            <a href="../../menu/06_use/use.html">이용약관</a>
+          </li>
+          <li class="use_1">
+            <a href="../../menu/07_membership/membership.html"
+              >스뿌 멤버십 소개</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <header>
+          <div class="left">
+            <div class="logo"><a href="../../index.html">sfu</a></div>
+            <div class="sfu_n">
+              <a href="../05_intro/intro.html">SFU town</a>
+            </div>
+            <div class="sfu_n">
+              <a href="../04_playList/playList.html">SFU play</a>
+            </div>
+
+            <!-- mo ham_btn -->
+            <div class="ham_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="right">
+            <input type="text" />
+          </div>
+        </header>
+
+        <!--mo tab_menu -->
+        <div class="tab_menu_wrap">
+          <div class="tab_menu_box">
+            <div class="tab_profile">
+              <div class="tab_pro_img">
+                <img src="../../images/ME.png" alt="profile_illust" />
+              </div>
+              <h5 class="tab_info_1">dkfjwl_3</h5>
+              <p class="tab_info_2">로그아웃 / 설정</p>
+            </div>
+            <ul class="tab_menu">
+              <li>
+                <a href="../../menu/01_chart/chart.html"
+                  ><i class="far fa-chart-bar"></i>차트</a
+                >
+              </li>
+              <li>
+                <a href="../../menu/02_genre/genre.html">
+                  <i class="fas fa-water"></i>장르</a
+                >
+              </li>
+              <li>
+                <a href="../../menu/03_artist/artist.html"
+                  ><i class="far fa-comments"></i>아티스트talk</a
+                >
+              </li>
+              <li>
+                <a href="../../menu/04_playList/playList.html">
+                  <i class="fas fa-headphones-alt"></i>내 플레이리스트</a
+                >
+              </li>
+              <li>
+                <a href="../../menu/05_intro/intro.html"
+                  ><i class="fas fa-rainbow"></i>사이트 소개</a
+                >
+              </li>
+
+              <ul class="tab_bottom_menu">
+                <li class="use_1">
+                  <a href="../../menu/07_membership/membership.html"
+                    >스뿌 멤버십</a
+                  >
+                </li>
+                <li class="use_1">
+                  <a href="../../menu/06_use/use.html">이용약관</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pop_ad">
+          <div class="pop_left">
+            <div class="ad_img">
+              <img src="../../images/stereo png.png" alt="pop_ad_icon" />
+            </div>
+            <h2 class="ad_title">
+              첫가입 이벤트! 3개월 동안 100원의 혜택으로 스뿌와 함께해보세요.
+            </h2>
+          </div>
+
+          <div class="pop_right">
+            <img src="../../images/pop erase btn.png" alt="x_btn" />
+          </div>
+        </div>
+
+        <!-- ▼ section start  -->
+
+        <section class="section section_1">
+          <div class="contaner">
+            <!-- -----------------------con_wrap 최신 차트 start -->
+            <div class="con_wrap">
+              <h2 class="title">최신 차트</h2>
+              <div class="con_box">
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">1</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img1.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Annabelle's Homework</div>
+                  <div class="con_singer">Alec Benjamin</div>
+                  <audio class="con_audio">
+                    <source class="source" src="" />
+                  </audio>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">2</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img2.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Dynamite</div>
+                  <div class="con_singer">Sigrid</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">3</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img3.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Drift Away(feat.Salvo)</div>
+                  <div class="con_singer">Le Boeuf</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">4</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img4.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Daisies</div>
+                  <div class="con_singer">Katy Perry</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">5</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/sec1_con_img5.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Summer Lover</div>
+                  <div class="con_singer">MFMF, Alex Ungku</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <!-- 더보기 클릭하면 -->
+                <div class="more_con_wrap">
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">6</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img6.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Feelings</div>
+                    <div class="con_singer">Lauv</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">7</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img7.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Internet You(Denis Remix)</div>
+                    <div class="con_singer">Brynn Eliott</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">8</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img8.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Come Back To Me</div>
+                    <div class="con_singer">Chantel Jeffiries, Shaylen</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">9</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img9.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">for him(feat. Allday)</div>
+                    <div class="con_singer">Troye Sivan</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">10</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img10.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">21</div>
+                    <div class="con_singer">Gracie Abrams</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">11</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img11.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Enemies</div>
+                    <div class="con_singer">Lauv</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">12</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img12.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Left Right Left</div>
+                    <div class="con_singer">Charlie Puth</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">13</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img13.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Open My Mouth</div>
+                    <div class="con_singer">Kiara</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">14</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img14.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Lullaby</div>
+                    <div class="con_singer">Sigala, Paloma Faith</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">15</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img15.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">
+                      How I Want Ya(feat. Hailee SteinFeld)
+                    </div>
+                    <div class="con_singer">Hudson Thames</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">16</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img16.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Symphony(feat. Zara Larsson)</div>
+                    <div class="con_singer">Clean Bandit</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">17</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img17.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Older</div>
+                    <div class="con_singer">Sasha Sloan</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">18</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img18.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Just A Bit</div>
+                    <div class="con_singer">Aexcit</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">19</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img19.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Mean It(feat. Wrabel)</div>
+                    <div class="con_singer">Cash Cash</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">20</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img20.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Expectations(R3HAB Remix)</div>
+                    <div class="con_singer">Ella Isaacson, Gallant, R3hab</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">21</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img21.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">
+                      Lucky Me(feat. Great Good Fine Ok)
+                    </div>
+                    <div class="con_singer">The Knocks</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">22</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img22.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Taped Up Pieces</div>
+                    <div class="con_singer">Pilows, Ez Quew</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">23</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img23.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Sims</div>
+                    <div class="con_singer">Lauv</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">24</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img24.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Strawberries & Cigarettes</div>
+                    <div class="con_singer">WESS</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">25</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img25.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Before You Go</div>
+                    <div class="con_singer">Lewis Capaldi</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">26</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img26.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Castle on the Hill</div>
+                    <div class="con_singer">Ed Sheeran</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">27</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img27.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Viva La Vida</div>
+                    <div class="con_singer">Coldplay</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">28</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img28.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Gravity (feat. JMR)</div>
+                    <div class="con_singer">Jai Wolf</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">29</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img29.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">So Sick(feat. Celsius)</div>
+                    <div class="con_singer">No Others</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">30</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img30.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">smiling when i die</div>
+                    <div class="con_singer">Sasha Sloan</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="more_btn">+ 더보기</button>
+              </div>
+            </div>
+
+            <!-- ----------------------------con_wrap 인기차트 start -->
+            <div class="con_wrap">
+              <h2 class="title">인기 차트</h2>
+              <div class="con_box">
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">1</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img30.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">smiling when i die</div>
+                  <div class="con_singer">Sasha Sloan</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">2</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img28.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Gravity (feat. JMR)</div>
+                  <div class="con_singer">Jai Wolf</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">3</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img27.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Viva La Vida</div>
+                  <div class="con_singer">Coldplay</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">4</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img26.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Castle on the Hill</div>
+                  <div class="con_singer">Ed Sheeran</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="con">
+                  <span class="material-icons heart">favorite_border</span>
+                  <span class="num">5</span>
+                  <div class="img_wrap">
+                    <div class="img">
+                      <img src="../../images/img5.jpg" />
+                    </div>
+                  </div>
+                  <div class="con_song">Summer Lover</div>
+                  <div class="con_singer">MFMF, Alex Ungku</div>
+                  <div class="con_icon">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <!-- 더보기 클릭하면 -->
+                <div class="more_con_wrap2">
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">6</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/sec1_con_img5.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Noname Planet Hotel</div>
+                    <div class="con_singer">WESS</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">7</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img4.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Daisies</div>
+                    <div class="con_singer">Katy Perry</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">8</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img1.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Annabelle's Homework</div>
+                    <div class="con_singer">Alec Benjamin</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">9</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img6.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Feelings</div>
+                    <div class="con_singer">Lauv</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">10</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img8.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Come Back To Me</div>
+                    <div class="con_singer">Chantel Jeffiries, Shaylen</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">11</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img12.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Left Right Left</div>
+                    <div class="con_singer">Charlie Puth</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">12</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img14.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Lullaby</div>
+                    <div class="con_singer">Sigala, Paloma Faith</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">13</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img23.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Sims</div>
+                    <div class="con_singer">Lauv</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">14</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img3.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Drift Away(feat.Salvo)</div>
+                    <div class="con_singer">Le Boeuf</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">15</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img11.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Enemies</div>
+                    <div class="con_singer">Lauv</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">16</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img15.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">
+                      How I Want Ya(feat. Hailee SteinFeld)
+                    </div>
+                    <div class="con_singer">Hudson Thames</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">17</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img18.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Just A Bit</div>
+                    <div class="con_singer">Aexcit</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">18</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img16.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Symphony(feat. Zara Larsson)</div>
+                    <div class="con_singer">Clean Bandit</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">19</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img22.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Taped Up Pieces</div>
+                    <div class="con_singer">Pilows, Ez Quew</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">20</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img24.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Strawberries & Cigarettes</div>
+                    <div class="con_singer">WESS</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">21</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img3.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Drift Away(feat.Salvo)</div>
+                    <div class="con_singer">WESS</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">22</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img9.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">for him(feat. Allday)</div>
+                    <div class="con_singer">Le Boeuf</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">23</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img10.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">21</div>
+                    <div class="con_singer">Gracie Abrams</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">24</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img17.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Older</div>
+                    <div class="con_singer">Sasha Sloan</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">25</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img21.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">
+                      Lucky Me(feat. Great Good Fine Ok)
+                    </div>
+                    <div class="con_singer">The Knocks</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">26</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img19.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Mean It(feat. Wrabel)</div>
+                    <div class="con_singer">Cash Cash</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">27</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img20.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Expectations(R3HAB Remix)</div>
+                    <div class="con_singer">Ella Isaacson, Gallant, R3hab</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">28</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img16.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Symphony(feat. Zara Larsson)</div>
+                    <div class="con_singer">Clean Bandit</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">29</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img7.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Internet You(Denis First Remix)</div>
+                    <div class="con_singer">Brynn Eliott</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="con">
+                    <span class="material-icons heart">favorite_border</span>
+                    <span class="num">30</span>
+                    <div class="img_wrap">
+                      <div class="img">
+                        <img src="../../images/img13.jpg" />
+                      </div>
+                    </div>
+                    <div class="con_song">Open My Mouth</div>
+                    <div class="con_singer">Kiara</div>
+                    <div class="con_icon">
+                      <i class="fa fa-play" aria-hidden="true"></i>
+                      <i class="fa fa-list-ul" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="more_btn2">+ 더보기</button>
+              </div>
+
+              <!-- ------------con2_wrap 나의 취저가수 start -->
+              <div class="con2_wrap">
+                <h2 class="title">나의 취저가수는?</h2>
+                <ul class="con2">
+                  <li>
+                    <div class="con2_img">
+                      <a href="#"><img src="../../images/img2.jpg" alt="" /></a>
+                    </div>
+                    <span><a href="#">Sigrid</a></span>
+                  </li>
+                  <li>
+                    <div class="con2_img">
+                      <a href="#"><img src="../../images/img4.jpg" alt="" /></a>
+                    </div>
+                    <span><a href="#">katy Perry</a></span>
+                  </li>
+                  <li>
+                    <div class="con2_img">
+                      <a href="#"><img src="../../images/img6.jpg" alt="" /></a>
+                    </div>
+                    <span><a href="#">Lauv</a></span>
+                  </li>
+                  <li>
+                    <div class="con2_img">
+                      <a href="#"><img src="../../images/img8.jpg" alt="" /></a>
+                    </div>
+                    <span><a href="#">Chantel Jeffiries, Shaylen</a></span>
+                  </li>
+                  <li>
+                    <div class="con2_img">
+                      <a href="#"
+                        ><img src="../../images/img10.jpg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Charlie Puth</a></span>
+                  </li>
+                  <li>
+                    <div class="con2_img">
+                      <a href="#"
+                        ><img src="../../images/img14.jpg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Sigala, Paloma Faith</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="in_footer">
+              <h5>
+                회사소개 |
+                <span><a href="menu/06_use/use.html">이용약관</a></span> |
+                개인정보 처리방침 | 청소년 보호정책 | 사업자정보 확인
+              </h5>
+              <h6>
+                제작자 : 김은지, 이유빈, 한연휘 / 사업자 등록번호 :
+                2934-23355-3993 제작일 : 14days / 2021-12-10 to 2021-12-24
+              </h6>
+              <p>우리의 깃헙 주소 넣기</p>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+
+    <div class="mainPlayerBar">
+      <!--- left part --->
+      <div class="playerBar_left">
+        <!--- song img --->
+        <img id="track_image" />
+      </div>
+
+      <!--- right part --->
+      <div class="playerBar_right">
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+        <!--- song title & artist name --->
+        <p id="title">title.mp3</p>
+        <p id="artist">Artist name</p>
+
+        <!--- middle part --->
+        <div class="middle">
+          <button onclick="previous_song()" id="pre">
+            <i class="fa fa-step-backward" aria-hidden="true"></i>
+          </button>
+          <button onclick="justplay()" id="play">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </button>
+          <button onclick="next_song()" id="next">
+            <i class="fa fa-step-forward" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!--- song duration part --->
+        <div class="duration">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="duration_slider"
+            onchange="change_duration()"
+          />
+        </div>
+        <button id="auto" onclick="autoplay_switch()">
+          Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+        </button>
+
+        <div class="playerBar_volume">
+          <p id="volume_show">90</p>
+          <i
+            class="fa fa-volume-up"
+            aria-hidden="true"
+            onclick="mute_sound()"
+            id="volume_icon"
+          ></i>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="90"
+            onchange="volume_change()"
+            id="volume"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/chart.js"></script>
+    <script src="../../js/playerBar.js"></script>
+  </body>
+</html>

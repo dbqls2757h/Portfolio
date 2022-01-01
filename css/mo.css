@@ -863,6 +863,11 @@
     color: #797979;
   }
 
+  .sec5_txt2 span:nth-child(1)::after {
+    content: "|";
+    padding-left: 5px;
+  }
+
   /* section6 start!!! */
   .section6 {
     height: 500px;

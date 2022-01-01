@@ -1,0 +1,232 @@
+.container_1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.mood_genre {
+  margin-top: 200px;
+}
+
+.mood_genre h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #4d4d4d;
+}
+
+.genres_1 h6 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 45px;
+}
+
+.genres_2 h6 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 45px;
+}
+
+.genres_3 h6 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 45px;
+}
+
+.genres_1,
+.genres_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genres_1 div {
+  width: 270px;
+  height: 300px;
+  float: left;
+}
+
+.genres_2 div {
+  width: 270px;
+  height: 300px;
+  float: left;
+}
+
+.genres_3 div {
+  width: 270px;
+  height: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
+.genre_image {
+  position: relative;
+  margin-top: 5px;
+}
+
+.section_1 img {
+  width: 270px;
+  height: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* container_1 */
+
+.container_2 {
+  width: 100%;
+  height: 50vh;
+}
+
+.container_2 h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #4d4d4d;
+  margin-top: 100px;
+}
+
+.genres_4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genres_4 img {
+  width: 270px;
+  height: 200px;
+}
+
+.genres_4 h6 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 45px;
+}
+
+/* player  */
+
+/* responsive css */
+
+@media screen and (max-width: 500px) {
+  /* .wrap {
+    width: 375px;
+  } */
+
+  .menu {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    width: 100%;
+    height: 60px;
+  }
+
+  .right {
+    all: unset;
+    margin-right: 20px;
+  }
+
+  .left .logo {
+    font-size: 30px;
+  }
+
+  .left .sfu_n,
+  .right input {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  /* section_1  */
+
+  .genres_1 {
+    display: unset;
+  }
+
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mood_genre {
+    margin-top: 120px;
+  }
+  .mood_genre h1 {
+    font-size: 20px;
+  }
+
+  .section_1 img {
+    width: 156px;
+    height: 117px;
+  }
+
+  .genres_1,
+  .genres_2 {
+    display: unset;
+  }
+  .genres_1 div {
+    all: unset;
+    float: left;
+    margin-right: 5px;
+  }
+
+  .genres_1 h6 {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #707070;
+  }
+
+  .genres_2 h6 {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #707070;
+  }
+
+  .genres_3 h6 {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #707070;
+  }
+
+  .genres_2 div {
+    all: unset;
+    float: left;
+    margin-right: 5px;
+  }
+
+  .genres_3 div {
+    all: unset;
+    float: left;
+    margin-right: 5px;
+  }
+
+  /* container_2 */
+
+  .genre {
+    padding-top: 60px;
+  }
+
+  .genre_image {
+    margin-right: 5px;
+  }
+
+  .container_2 h1 {
+    font-size: 20px;
+  }
+
+  .genres_4 {
+    all: unset;
+  }
+
+  .genres_4 div {
+    float: left;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
