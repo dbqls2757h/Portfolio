@@ -950,6 +950,8 @@
   .sec5_txt2 span:nth-child(1)::after {
     content: "|";
     padding-left: 5px;
+    color: #ff9920;
+    opacity: 0.7;
   }
 
   .sec5_con:hover span {
