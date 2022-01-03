@@ -5,6 +5,8 @@
 
 .section_1 {
   margin-top: 100px;
+  position: relative;
+  height: 450px;
 }
 
 .section_1 h1 {
@@ -20,24 +22,39 @@
 .section_1 .arrow {
   position: absolute;
   right: 10px;
-  top: 60%;
-  font-size: 40px;
-  font-weight: 900;
-  color: #000;
+  top: 55%;
+  color: #fff;
   cursor: pointer;
+  z-index: 12;
 }
 
-.section_1 .album {
+.arrow .material-icons{
+  font-size: 45px;
+}
+
+.section_1 li {
   margin-right: 30px;
 }
 
-.section_1 .album:last-child {
+.section_1 li:last-child {
   margin-right: 0;
 }
+
+.section_1 .slide_wrap{
+  width: 3010px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
 
 .album_box {
   width: 100%;
   display: flex;
+  position: absolute;
+  left: 0; top: 0;
+  transition: 0.5s;
 }
 
 .album {
@@ -75,6 +92,10 @@
 
 .cover_1:hover img {
   transform: scale(1.06);
+}
+
+.plusmargin{
+  margin-top: 175px;
 }
 
 /* ------------- section_1 end */
@@ -128,14 +149,28 @@
 
 .rank_box .chart_rank {
   width: 100%;
-  height: 33.33333%;
+  height: 70px;
   border-top: 0.5px solid #ebebeb;
   display: flex;
   align-items: center;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 /* hover event 작성 */
+.rank_box .chart_rank:hover {
+  height: 90px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+}
+
+.rank_box .chart_rank:hover .rank_txt h3{
+  font-size: 23px;
+}
+
+.rank_box .chart_rank:hover .rank_box{
+  border-top: 0.5px solid transparent;
+}
+
 .rank_box .rank_txt h3 {
   font-size: 20px;
   font-weight: 600;
@@ -242,7 +277,7 @@
   cursor: pointer;
 }
 
-.ad_wrap .btn a {
+.ad_wrap .btn p {
   color: #fff;
 }
 
@@ -252,6 +287,7 @@
   margin-top: 125px;
   margin-bottom: 125px;
   position: relative;
+  cursor: grab;
 }
 
 .section_4 h1 {
@@ -260,28 +296,78 @@
   margin-bottom: 30px;
 }
 
-.section_4 .album_box_4 {
+.section_4 .slide_wrap_4{
+  height: 370px;
+  width: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* width: 3440px;
+  height: 100%;
   position: relative;
+  overflow: hidden; */
 }
 
-/* .cover_4{
-  border-radius: 20px;
-  overflow: hidden;
-  transition: .5s;
+.section_4 .slide_wrap_4::-webkit-scrollbar{
+  display: none;
 }
 
-.cover_4 img:hover{
-  transform: scale(1.07);
-} */
+.section_4 .talk_box {
+  /* width: 100%;
+  position: relative;
+  display: flex;
+  transition: 0.5s; */
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 3000px;
+}
 
-.section_4 .arrow {
+.item{
+  position: relative;
+  width: 400px;
+  height: 370px;
+  margin-right: 30px;
+}
+
+.talk_box .item:last-child{
+  margin-right: 0;
+}
+
+.progress_bar{
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: none;
+}
+
+.prog_bar_inner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #333;
+}
+
+/* du */
+
+.section_4 .arrow_4 {
   position: absolute;
   right: 10px;
   top: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow_4 .material-icons{
   font-size: 40px;
   font-weight: 900;
   color: #fff;
-  cursor: pointer;
 }
 
 .section_4 .album {
@@ -292,11 +378,6 @@
 
 .section_4 .album:last-child {
   margin-right: 0;
-}
-
-.section_4 .album_box {
-  width: 100%;
-  display: flex;
 }
 
 .section_4 .album .title {
@@ -316,6 +397,20 @@
 
 /* ------------- section_4 end */
 
+.top_btn{
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 70px;  
+}
+
+
 /* ▼ mobile ver */
 @media screen and (max-width: 500px) {
   header {
@@ -330,7 +425,7 @@
     width: 25px;
     height: 20px;
     position: absolute;
-    right: 20px;
+    right: 35px;
   }
 
   .ham_btn span {
@@ -461,4 +556,141 @@
     color: #292929;
     opacity: 0.8;
   }
+
+  .top_btn{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .ham_btn {
+    right: 20px;
+  }
+
+}
+
+/* tab menu media end */
+
+
+@media screen and (max-width: 500px) {
+
+  .section_1 .slide_wrap {
+    width: 1510px;
+  }
+
+  .section_1{
+    height: 360px;
+  }
+
+  .section_1 h1 {
+    font-size: 22px;
+  }
+
+  .section_1 li {
+    margin-right: 10px;
+  }
+
+  .cover_1 {
+    width: 180px;
+    height: 180px;
+  }
+
+  .album {
+    width: 180px;
+    height: 220px;
+  }
+
+  .section_1 .arrow {
+    right: 0;
+    top: 1%;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .arrow .material-icons {
+    font-size: 25px;
+  }
+
+  /* section_1 end */
+
+
+  .section_2 {
+    margin-top: 70px;
+  }
+
+  .section_2 h1 {
+    font-size: 22px;
+  }
+
+  .section_2 .play_right {
+    display: none;
+  }
+
+  .rank_box .rank_img {
+    display: none;
+  }
+
+  .rank_box .chart_rank:hover .rank_txt h3 {
+    font-size: 19px;
+  }
+
+  .rank_box .rank_txt p {
+    font-size: 16px;
+  }
+
+  .chart_rank .rank_txt {
+    width: 83%;
+    margin-left: 13px;
+  }
+  .con_icon span:nth-child(2){
+    display: none;
+  }
+
+  /* section_2 end */
+
+  .section_3 {
+    margin-top: 70px;
+    height: 300px;
+  }
+
+
+  .ad_txt h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .ad_txt p {
+    font-size: 19px;
+  }
+
+  .ad_wrap .btn {
+    width: 180px;
+    height: 45px;
+    font-size: 17px;
+  }
+
+  /* section_3 end */
+
+  .section_4 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .section_4 h1 {
+    font-size: 22px;
+  }
+
+  .section_4 .slide_wrap_4 {
+    height: 380px;
+  }
+
+
+
+
+
+
+
+
 }

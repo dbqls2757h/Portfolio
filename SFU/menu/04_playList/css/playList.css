@@ -1,6 +1,11 @@
+.main{
+  background-color: #fff;
+}
+
 .section_1 {
   margin: 100px auto;
   width: 1535px;
+  height: unset;
 }
 
 .section_1 .in_box_1 {
@@ -16,21 +21,257 @@
 .section_1 .playbox {
   margin-top: 45px;
   width: 93%;
-  height: 300px;
+  height: 415px;
   background-color: #fefefe;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section_1 .playlist {
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 93%;
-  height: 300px;
-  /* background-color: #fefefe; */
-  background-color: bisque;
   border-radius: 20px;
 }
 
-/* ------------- section_1 end */
+/* ------------- section_1 common end */
+
+.play_right .inner_play {
+  width: 350px;
+  height: 528px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+} */
+
+.play_box{
+  padding: 35px;
+}
+
+.inner_play{
+  display: flex;
+}
+
+.round_cover{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 30%);
+}
+
+.round_cover img{
+  width: 110%;
+}
+
+.square_cover{
+  margin-left: 150px;
+  position: relative;
+}
+
+.square_cover .close_btn{
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.txt_cover{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  color: #1d1d1d;
+  margin-bottom: 15px;
+}
+
+.txt_cover h2{
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.txt_cover .cover_song{
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.txt_cover .cover_singer{
+  font-size: 23px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.time_wrap{
+  width: 560px;
+  background: #fefefe;
+  padding: 20px 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  background-color: #eee;
+  /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08); */
+}
+
+.audio_cover{
+  all: unset;
+  width: 300px;
+  height: 60px;
+}
+
+.user_cover{
+  width: 270px;
+  height: 37px;
+  background-color: #f3f3f3;
+  color: #3d3d3d;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.user_cover .user_con{
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+
+.user_cover .user_names{
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.audio_cover{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.audio_cover button{
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.08);
+}
+
+#seekslider{
+  width: 100%;
+}
+
+#time_box{
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  color: #1d1d1d;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+/* section_1  playbox end */
+
+select:-internal-list-box option:checked:hover {
+  background-color: -internal-light-dark(rgb(206, 206, 206), rgb(84, 84, 84));
+  color: -internal-light-dark(rgb(206, 206, 206), rgb(84, 84, 84));
+}
+body{
+  background-color: #ebebeb;
+}
+.list_up{
+  margin: 0 auto;
+  display: block;
+  width: 1297px;
+  background-color: #fefefe;
+  display: flex;
+  border-radius: 20px;
+}
+
+.info_icon{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.info_singer{
+  width: 400px;
+}
+
+
+
+.info_icon .div_heart{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info_singer .div_heart{
+  justify-content: start;
+}
+
+.list_up .div_heart:first-child,
+.list_up .first_title{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+#mylist{
+  margin: 200px auto;
+  all: unset;
+  width: 497px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #ebebeb; */
+  /* padding: 20px; */
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+option{
+  all: unset;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dadada; 
+  font-size: 18px;
+
+  background-image: url(css/ccl);
+}
+
+.info_icon .div_heart:last-child,
+option:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+
+/* section_1  playlist end */
 
 @media screen and (max-width: 500px) {
 }

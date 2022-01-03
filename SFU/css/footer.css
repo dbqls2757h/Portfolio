@@ -32,4 +32,16 @@ footer {
   .in_footer {
     padding: 20px;
   }
+
+  .in_footer h5,
+  .in_footer h6  {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .in_footer p{
+    font-size: 17px;
+    line-height: 22px;
+  }
 }
+

@@ -14,7 +14,7 @@
 
   function initAudioplayer() {
     audio = new Audio();
-    audio.src = "mp3/song1.mp3";
+    audio.src = "audio/song1.mp3";
     audio.loop = true;
 
     // 플레이버튼

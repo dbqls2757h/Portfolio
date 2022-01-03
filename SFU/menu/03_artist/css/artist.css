@@ -1,5 +1,7 @@
 .section_1 {
   width: 100%;
+  height: unset;
+  margin-bottom: 50px;
 }
 
 /* ----------------------story_wrap 스토리 부분start!!!!!! */
@@ -222,21 +224,29 @@
 }
 
 @media screen and (max-width: 500px) {
+  .section_1 {
+    padding-bottom: 0;
+  }
+
   /* ----------------------story_wrap 스토리 부분start!!!!!! */
 
   .story_wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .story_wrap > li {
-    width: 80px;
-    height: 120px;
+    width: 70px;
+    height: 100px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+  }
+
+  .section_1 li {
+    margin-right: 0;
   }
 
   .story_wrap_li:nth-child(2),
@@ -276,7 +286,7 @@
     width: 100%;
     background-color: #f3f3f3;
     border-radius: 20px;
-    margin-top: 65px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;

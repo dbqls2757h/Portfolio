@@ -59,11 +59,11 @@ body {
 
 /* both range slider part */
 input[type="range"] {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   width: 50%;
   outline: none;
   height: 2px;
-  margin: 0 15px;
+  /* margin: 0 15px; */
 }
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -404,17 +404,23 @@ header {
   cursor: pointer;
 }
 
+.non_ad{
+  display: none;
+  margin: 100px;
+}
+
+
 /* ------------- pop box end */
 
 @media screen and (max-width: 500px) {
-  /* mo ê³µí†µì˜ì—­ start */
+  /* mo —­ start */
   .menu,
   .pop_ad {
     display: none;
   }
 
   .wrap {
-    width: 375px;
+    max-width: 500px;
   }
 
   .section {
@@ -423,8 +429,9 @@ header {
   }
 
   .main {
-    width: 375px;
+    max-width: 500px;
     margin-left: 0;
+    width: 92%;
   }
 
   .section_1 {

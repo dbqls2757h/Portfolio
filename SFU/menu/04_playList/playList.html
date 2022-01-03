@@ -25,9 +25,13 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
   </head>
+
   <body>
+
     <div class="wrap">
+
       <div class="menu">
         <div class="profile">
           <div class="pro_img">
@@ -76,6 +80,7 @@
       </div>
 
       <div class="main">
+
         <header>
           <div class="left">
             <div class="logo"><a href="../../index.html">sfu</a></div>
@@ -168,15 +173,223 @@
         <!-- ▼ section start  -->
 
         <div class="section section_1">
-          <div class="in_box_1">
-            <div class="playbox"></div>
 
-            <div class="playlist"></div>
+          <div class="in_box_1">
+
+            <div class="playbox">
+
+              <div class="inner_play">
+        
+                <div class="round_cover">
+                  <img src="../../images/img1.jpg" alt="album_cover">
+                </div>
+        
+                <div class="square_cover">
+
+                  <div class="close_btn">
+                    <span class="material-icons">close</span>
+                  </div>
+
+                  <div class="txt_cover">
+                    <h2>01. Album_name</h2>
+                    <h4 class="cover_song">Annabell's Homework</h4>
+                    <p class="cover_singer">Alec Benjamin</p>
+                  </div>
+          
+                  <div class="time_wrap">
+                    <div class="audio_cover">
+                      <button class="pre_btn"><span class="material-icons">skip_previous</span></button>
+                      <button class="pp_btn"><span class="material-icons" id="playpausebtn">play_arrow</span></button>        
+                      <button class="next_btn"><span class="material-icons">skip_next</span></button>
+                    </div>
+            
+                    <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+                    <div id="time_box">
+                      <span id="curtimetext">00:00</span> <span id="durtimetext">00:00</span>
+                    </div>
+                  </div>
+
+                </div>
+        
+              </div>
+
+              <!-- 주석 -->
+
+            </div>
+
+            <div class="playlist">
+
+              <div class="list_up">
+
+                <div class="info_icon">
+                  <div class="div_heart">순서</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;01.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;02.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;03.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;04.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;05.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;06.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;07.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;08.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;09.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;10.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;11.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;12.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;13.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;14.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;15.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;16.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;17.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;18.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;19.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;20.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;21.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;22.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;23.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;24.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;25.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;26.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;27.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;28.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;29.</div>
+                  <div class="div_heart"><span class="material-icons">favorite_border</span>&nbsp;&nbsp;&nbsp;&nbsp;30.</div>
+                </div>
+      
+                <select id="mylist" size="30">
+        
+                    <option class="first_title">곡명</option>
+                    <option value="song1">Annabelle's Homework</option>
+                    <option value="song2">Dynamite</option> 
+                    <option value="song3">Drift Away (feat. salvo)</option>
+                    <option value="song4">Daisies</option>
+                    <option value="song5">Summer Lover</option>
+                    <option value="song6">Feelings</option>
+                    <option value="song7">Internet You (Denis First Remix)</option>
+                    <option value="song8">Come Back To Me</option>
+                    <option value="song9">for him. (feat. Allday)</option>
+                    <option value="song10">21</option>
+                    <option value="song11">Enemies</option>
+                    <option value="song12">Left Right Left</option>
+                    <option value="song13">Open My Mouth</option>
+                    <option value="song14">Lullaby</option>
+                    <option value="song15">How I Want Ya(feat. Hailee Steinfeld)</option>
+                    <option value="song16">Symphony (feat. Zara Larsson)</option>
+                    <option value="song17">Older</option>
+                    <option value="song18">Just A Bit</option>
+                    <option value="song19">Mean It(feat. Wrabel)[Midnight Kids Remix]</option>
+                    <option value="song20">Expectations (R3HAB Remix)</option>
+                    <option value="song21">Lucky Me (feat. Great Good Fine Ok)</option>
+                    <option value="song22">Taped Up Pieces</option>
+                    <option value="song23">Sims</option>
+                    <option value="song24">Strawberries & Cigarettes</option>
+                    <option value="song25">Before You Go</option>
+                    <option value="song26">Castle on the Hill</option>
+                    <option value="song27">Viva La Vida</option>
+                    <option value="song28">Gravity (feat. JMR)</option>
+                    <option value="song29">So Sick (feat. Celsius)</option>
+                    <option value="song30">smiling when i die</option>
+            
+                </select>
+      
+                <div class="info_icon  info_singer">
+                    <div class="div_heart">아티스트</div>
+                    <div class="div_heart">Alec Benjamin</div>
+                    <div class="div_heart">Sigrid</div>
+                    <div class="div_heart">Le Booeuf</div>
+                    <div class="div_heart">Katy Perry</div>
+                    <div class="div_heart">MFMF., Alex Ungku</div>
+                    <div class="div_heart">Lauv</div>
+                    <div class="div_heart">Brynn Elliott</div>
+                    <div class="div_heart">Chantel Jeffries, Shaylen</div>
+                    <div class="div_heart">Troye Sivan</div>
+                    <div class="div_heart">Cracie Abrams</div>
+                    <div class="div_heart">Lauv</div>
+                    <div class="div_heart">Charlie Puth</div>
+                    <div class="div_heart">Kiiara</div>
+                    <div class="div_heart">Sigala, Paloma Faith</div>
+                    <div class="div_heart">Hudson Thames</div>
+                    <div class="div_heart">Clean Bandit</div>
+                    <div class="div_heart">Sasha Sloan</div>
+                    <div class="div_heart">Aexcit</div>
+                    <div class="div_heart">Cash Cash</div>
+                    <div class="div_heart">Ella Isaacson, Gallant, R3hab</div>
+                    <div class="div_heart">The Knocks</div>
+                    <div class="div_heart">Pillows, Ez Quew</div>
+                    <div class="div_heart">Lauv</div>
+                    <div class="div_heart">Tryoe Sivan</div>
+                    <div class="div_heart">Lewis Capaldi</div>
+                    <div class="div_heart">Ed Sheeran</div>
+                    <div class="div_heart">Coldplay</div>
+                    <div class="div_heart">Jai Wolf</div>
+                    <div class="div_heart">No Others</div>
+                    <div class="div_heart">Sasha Sloan</div>
+                </div>
+      
+                <div class="info_icon">
+                  <div class="div_heart"></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                  <div class="div_heart"><span class="material-icons">play_arrow</span>&nbsp; <span class="material-icons">playlist_add</span>&nbsp; <span class="material-icons">more_vert</span></div>
+                </div>
+        
+              </div>
+
+            </div>
+
           </div>
+
         </div>
+        <!-- section_1 end -->
+
+        <footer>
+          <div class="in_footer">
+            <h5>
+              회사소개 |
+              <span><a href="menu/06_use/use.html">이용약관</a></span> |
+              개인정보 처리방침 | 청소년 보호정책 | 사업자정보 확인
+            </h5>
+            <h6>
+              제작자 : 김은지, 이유빈, 한연휘 / 사업자 등록번호 :
+              2934-23355-3993 제작일 : 14days / 2021-12-10 to 2021-12-24
+            </h6>
+            <p>우리의 깃헙 주소 넣기</p>
+          </div>
+        </footer>
+        <!-- footer end -->
+
       </div>
+
     </div>
+
     <div class="mainPlayerBar">
+
       <!--- left part --->
       <div class="playerBar_left">
         <!--- song img --->
@@ -243,9 +456,8 @@
       </div>
     </div>
 
-    <!-- ▼ section start  -->
-
     <script src="js/playList.js"></script>
     <script src="../../js/playerBar.js"></script>
+
   </body>
 </html>

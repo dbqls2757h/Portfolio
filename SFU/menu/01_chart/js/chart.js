@@ -20,8 +20,6 @@
     });
   });
 
-  //   더보기 버튼 누르면 나타나는 more_con_wrap
-
   const handleClick = (e) => {
     e.preventDefault();
     // console.log(e.preventDefault());
@@ -38,6 +36,8 @@
 
   btnEl.addEventListener("click", handleClick);
   btn2El.addEventListener("click", handleClick2);
+
+  //   더보기 버튼 누르면 나타나는 more_con_wrap
 
   const playBtn = document.querySelector(".fa-play");
   const conAudio = document.querySelector(".con_audio");
