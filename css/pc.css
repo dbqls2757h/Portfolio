@@ -141,6 +141,12 @@
     color: #ff9920;
   }
 
+  .mail.active {
+    top: 150px;
+    right: -25px;
+    transform: rotate(90deg);
+  }
+
   .fixed_txt_wrap {
     width: 100%;
     height: auto;
@@ -171,7 +177,12 @@
 
   /* header start!! */
   header {
-    display: none;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  header.block {
+    opacity: 1;
   }
 
   .in_header {
@@ -196,9 +207,13 @@
     font-weight: lighter;
   }
 
-  .top_header_on {
+  .top_header li {
+    cursor: pointer;
+  }
+
+  .top_header li.on {
     color: #ff9920;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   /* section1 start!!! */
@@ -560,7 +575,12 @@
 
   .sec3_right {
     width: 52%;
-    right: 120px;
+    right: 110px;
+  }
+
+  .sec3_right1,
+  .sec3_right3 {
+    margin-bottom: 20px;
   }
 
   .sec3_profile {
@@ -858,18 +878,19 @@
     width: 100%;
     height: auto;
     position: relative;
-    top: 80px;
+    top: 100px;
+    z-index: 1;
     font-family: "HSBombaram3_Regular";
     font-size: 50px;
     text-align: center;
   }
 
   .sec5_circle {
-    width: 220px;
+    width: 180px;
     height: auto;
     position: absolute;
-    top: 80px;
-    left: 22%;
+    top: 40px;
+    left: 40%;
     animation: rotate 16s linear infinite;
   }
 
@@ -883,7 +904,7 @@
     height: auto;
     margin: 0 auto;
     position: relative;
-    margin-top: 140px;
+    margin-top: 160px;
   }
 
   .sec5_con {
@@ -1087,6 +1108,7 @@
     width: 50px;
     height: 50px;
     background-color: #d3d3d3;
+    color: #fff;
     position: fixed;
     z-index: 999;
     right: 50px;
@@ -1095,11 +1117,13 @@
     line-height: 50px;
     border-radius: 50%;
     font-weight: lighter;
-    display: none;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
   }
 
-  .top_btn a {
-    color: #fff;
+  .top_btn.visible {
+    opacity: 1;
   }
 
   .top_btn:hover {

@@ -11,19 +11,13 @@
     <link href="css/tab.css" rel="stylesheet" type="text/css" />
     <link href="css/mo.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
       href="https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css"
       rel="stylesheet"
       type="text/css"
     />
-    <!-- font-family: 'Nanum Barun Gothic', sans-serif;-->
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.transit.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/jq.js"></script>
 
     <style>
       @font-face {
@@ -42,9 +36,6 @@
         font-style: normal;
       }
     </style>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jq.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -71,7 +62,7 @@
       <!-- header start!!! -->
       <header>
         <div class="in_header">
-          <ul class="top_header">
+          <ul class="top_header">         
             <li>hello</li>
             <li>profile</li>
             <li>works</li>
@@ -81,7 +72,7 @@
       </header>
 
       <!-- section1 start!!! -->
-      <section class="section1">
+      <section id="section1" class="section1">
         <div class="container">
           <div class="sec1_img sec1_img1 sec1_shake">
             <img src="img/sec1_img1.png" alt="" />
@@ -107,7 +98,7 @@
       </section>
 
       <!-- section3 start!!! -->
-      <div class="section3">
+      <section id="section3" class="section3">
         <div class="container">
           <div class="sec3_back">
             <img src="img/sec3_back1.png" alt="" />
@@ -249,10 +240,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- section5 start!!! -->
-      <section class="section5">
+      <section id="section5" class="section5">
         <div class="container">
           <div class="sec5_title">Works</div>
 
@@ -358,24 +349,15 @@
       </section>
 
       <!-- section6 start!!! -->
-      <section class="section6">
+      <section id="section6" class="section6">
         <div class="container">
-          <div
-            class="sec6_txt1"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-delay="100"
-          >
-            <span>함께 일 하고 싶으시다면?</span>
-            <span>Send me a message! : )</span>
+            <div class="sec6_txt1">
+              <span>함께 일 하고 싶으시다면?</span>
+              <span>Send me a message! : )</span>
+            </div>
           </div>
 
-          <div
-            class="sec6_txt2"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-delay="400"
-          >
+          <div class="sec6_txt2">
             <div class="sec6_check">
               <div class="check">
                 <img src="img/sec6_check.png" alt="" />
@@ -402,14 +384,12 @@
     </div>
 
     <!--top_btn -->
-    <div class="top_btn">
-      <a href="#">top</a>
-    </div>
+    <div class="top_btn">top</div>
 
     <div class="ball"></div>
 
-    <script>
-      AOS.init();
-    </script>
   </body>
+
+  <script src="js/main.js"></script>
+
 </html>
