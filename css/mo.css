@@ -802,6 +802,9 @@
     margin: 0 auto;
     position: relative;
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .sec5_con {
@@ -809,12 +812,10 @@
     height: 200px;
     background-color: #fff;
     border-radius: 15px;
-    float: left;
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .sec5_con:nth-child(2n) {
@@ -905,7 +906,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     color: #fff;
   }
@@ -924,7 +925,7 @@
     width: 30px;
     height: auto;
     position: relative;
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .sec6_check img {
@@ -949,6 +950,10 @@
     float: left;
     font-size: 14px;
     font-weight: 300;
+  }
+
+  .sec6_txt1 span:nth-child(1) {
+    padding-top: 30px;
   }
 
   @keyframes swing {
@@ -993,6 +998,7 @@
     font-size: 14px;
     border-radius: 50%;
     font-weight: lighter;
+    cursor: pointer;
   }
 
   .top_btn a {
