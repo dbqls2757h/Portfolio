@@ -72,7 +72,7 @@ $(document).ready(function () {
     .each(function (index) {
       $(this).attr("data-index", index);
     })
-    .hover(function () {
+    .click(function () {
       a = $(this).attr("data-index");
 
       $(".left_box_img").fadeOut();
