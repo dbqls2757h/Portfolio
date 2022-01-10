@@ -4,6 +4,7 @@
 }
 
 .wrap header {
+  position: fixed;
   background-color: transparent;
 }
 

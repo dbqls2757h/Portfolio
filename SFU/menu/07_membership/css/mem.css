@@ -16,6 +16,7 @@
 }
 
 .con_wrap img {
+  cursor: pointer;
   width: 100%;
 }
 
@@ -98,6 +99,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .con_box h3 {
@@ -127,7 +129,6 @@
 }
 
 @media screen and (max-width: 500px) {
-
   .section_1 {
     height: 70%;
     width: 100%;
@@ -143,11 +144,11 @@
     margin-bottom: 50px;
   }
 
-  .txt_wrap h1{
+  .txt_wrap h1 {
     font-size: 21px;
   }
 
-  .txt_wrap p{
+  .txt_wrap p {
     font-size: 17px;
   }
 
@@ -180,7 +181,7 @@
     line-height: 17px;
   }
 
-  .txt_wrap_2 span{
+  .txt_wrap_2 span {
     word-break: keep-all;
   }
 
@@ -194,6 +195,4 @@
     height: 160px;
     margin-bottom: 30px;
   }
-
-
 }

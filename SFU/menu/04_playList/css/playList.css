@@ -274,4 +274,90 @@ option:last-child {
 /* section_1  playlist end */
 
 @media screen and (max-width: 500px) {
+  .section_1 {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .section_1 .in_box_1 {
+    margin-top: 0px;
+    background-color: transparent;
+  }
+
+  .inner_play {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section_1 .playbox {
+    height: unset;
+    display: block;
+  }
+
+  .round_cover {
+    width: 280px;
+    height: 280px;
+  }
+
+  .square_cover {
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txt_cover h2 {
+    display: none;
+  }
+
+  .square_cover .close_btn {
+    display: none;
+  }
+
+  .txt_cover .cover_song {
+    font-size: 22px;
+  }
+
+  .txt_cover .cover_singer {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+
+  .time_wrap {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .section_1 input[type="range"] {
+    display: block;
+  }
+
+  .audio_cover {
+    margin-bottom: 10px;
+  }
+
+  .audio_cover .pre_btn,
+  .audio_cover .next_btn {
+    display: flex;
+  }
+
+  .info_icon {
+    display: none;
+  }
+
+  .list_up {
+    width: unset;
+  }
+
+  #mylist {
+    width: 100%;
+  }
+
+  .list_up .div_heart:first-child, .list_up .first_title {
+    display: none;
+  }
+
+
 }

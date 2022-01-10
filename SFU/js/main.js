@@ -36,6 +36,8 @@
   var slideMargin = 30;
   var nextBtn = document.querySelector('.arrow .next');
 
+  
+
   albumBox.style.width = (slideWidth + slideMargin)*slideCount - slideMargin + 'px';
 
     function moveSlide (num){

@@ -93,7 +93,6 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 15px;
 }
 .playerBar_volume i {
-  display: none;
   font-size: 25px;
   color: #969696;
 }
@@ -227,6 +226,10 @@ input[type="range"]::-webkit-slider-thumb {
     position: absolute;
     top: 14px;
     right: 0;
+  }
+
+  .playerBar_volume i {
+    display: none;
   }
 }
 
@@ -404,11 +407,10 @@ header {
   cursor: pointer;
 }
 
-.non_ad{
+.non_ad {
   display: none;
   margin: 100px;
 }
-
 
 /* ------------- pop box end */
 

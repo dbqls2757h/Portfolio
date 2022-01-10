@@ -28,7 +28,7 @@
   z-index: 12;
 }
 
-.arrow .material-icons{
+.arrow .material-icons {
   font-size: 45px;
 }
 
@@ -40,20 +40,19 @@
   margin-right: 0;
 }
 
-.section_1 .slide_wrap{
+.section_1 .slide_wrap {
   width: 3010px;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-
-
 .album_box {
   width: 100%;
   display: flex;
   position: absolute;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   transition: 0.5s;
 }
 
@@ -82,6 +81,7 @@
   height: 350px;
   border-radius: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .cover_1 img {
@@ -94,7 +94,7 @@
   transform: scale(1.06);
 }
 
-.plusmargin{
+.plusmargin {
   margin-top: 175px;
 }
 
@@ -163,13 +163,14 @@
   border-radius: 20px;
 }
 
-.rank_box .chart_rank:hover .rank_txt h3{
+.rank_box .chart_rank:hover .rank_txt h3 {
   font-size: 23px;
 }
 
-.rank_box .chart_rank:hover .rank_box{
+.rank_box .chart_rank:hover .chart_rank {
   border-top: 0.5px solid transparent;
 }
+
 
 .rank_box .rank_txt h3 {
   font-size: 20px;
@@ -296,7 +297,7 @@
   margin-bottom: 30px;
 }
 
-.section_4 .slide_wrap_4{
+.section_4 .slide_wrap_4 {
   height: 370px;
   width: 100%;
   overflow: scroll;
@@ -308,7 +309,7 @@
   overflow: hidden; */
 }
 
-.section_4 .slide_wrap_4::-webkit-scrollbar{
+.section_4 .slide_wrap_4::-webkit-scrollbar {
   display: none;
 }
 
@@ -323,18 +324,18 @@
   width: 3000px;
 }
 
-.item{
+.item {
   position: relative;
   width: 400px;
   height: 370px;
   margin-right: 30px;
 }
 
-.talk_box .item:last-child{
+.talk_box .item:last-child {
   margin-right: 0;
 }
 
-.progress_bar{
+.progress_bar {
   position: absolute;
   bottom: -20px;
   left: 0;
@@ -345,7 +346,7 @@
   display: none;
 }
 
-.prog_bar_inner{
+.prog_bar_inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -364,7 +365,7 @@
   z-index: 1;
 }
 
-.arrow_4 .material-icons{
+.arrow_4 .material-icons {
   font-size: 40px;
   font-weight: 900;
   color: #fff;
@@ -397,7 +398,7 @@
 
 /* ------------- section_4 end */
 
-.top_btn{
+.top_btn {
   width: 65px;
   height: 65px;
   display: flex;
@@ -407,9 +408,8 @@
   border-radius: 50%;
   position: fixed;
   bottom: 100px;
-  right: 70px;  
+  right: 70px;
 }
-
 
 /* ▼ mobile ver */
 @media screen and (max-width: 500px) {
@@ -557,30 +557,27 @@
     opacity: 0.8;
   }
 
-  .top_btn{
+  .top_btn {
     display: none;
   }
 }
 
 @media screen and (max-width: 380px) {
-
   .ham_btn {
     right: 20px;
   }
-
 }
 
 /* tab menu media end */
 
-
 @media screen and (max-width: 500px) {
-
   .section_1 .slide_wrap {
     width: 1510px;
   }
 
-  .section_1{
+  .section_1 {
     height: 360px;
+    overflow: hidden;
   }
 
   .section_1 h1 {
@@ -606,6 +603,7 @@
     top: 1%;
     color: #000;
     cursor: pointer;
+    z-index: 0;
   }
 
   .arrow .material-icons {
@@ -613,7 +611,6 @@
   }
 
   /* section_1 end */
-
 
   .section_2 {
     margin-top: 70px;
@@ -632,7 +629,7 @@
   }
 
   .rank_box .chart_rank:hover .rank_txt h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .rank_box .rank_txt p {
@@ -640,20 +637,23 @@
   }
 
   .chart_rank .rank_txt {
-    width: 83%;
+    width: 100%;
     margin-left: 13px;
   }
-  .con_icon span:nth-child(2){
+  .con_icon span:nth-child(2) {
     display: none;
+  }
+
+  .chart_box h2 {
+    font-size: 16px;
   }
 
   /* section_2 end */
 
   .section_3 {
     margin-top: 70px;
-    height: 300px;
+    height: 270px;
   }
-
 
   .ad_txt h2 {
     font-size: 22px;
@@ -662,7 +662,14 @@
   }
 
   .ad_txt p {
-    font-size: 19px;
+    font-size: 17px;
+    width: 208px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .ad_con span{
+    word-break: keep-all;
   }
 
   .ad_wrap .btn {
@@ -683,14 +690,24 @@
   }
 
   .section_4 .slide_wrap_4 {
-    height: 380px;
+    height: 240px;
   }
 
+  .section_4 .talk_box {
+    width: 1510px;
+  }
 
+  .section_4 .album .song {
+    font-size: 16px;
+  }
 
+  .item {
+    width: 180px;
+    margin-right: 0px;
+  }
 
-
-
-
+  .cover_4 img{
+    width: 100%;
+  }
 
 }

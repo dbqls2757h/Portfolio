@@ -261,8 +261,9 @@
   }
 
   .con_song {
-    font-size: 15px;
-    font-weight: 600;
+    width: 172px;
+    font-size: 17px;
+    font-weight: 400;
     margin-right: 10px;
   }
 
@@ -275,7 +276,6 @@
   }
 
   .con_icon {
-    margin-left: 120px;
     float: right;
   }
 
