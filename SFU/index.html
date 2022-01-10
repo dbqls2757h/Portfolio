@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SFU: Song for you</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main_con.css" />
+    <link rel="stylesheet" href="css/player.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- material Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrap">
+
+      <div class="menu">
+        <div class="profile">
+          <div class="pro_img">
+            <img src="images/ME.png" alt="profile_illust" />
+          </div>
+          <h5 class="info_1">dkfjwl_3</h5>
+          <p class="info_2">로그아웃 / 설정</p>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="menu/01_chart/chart.html"
+              ><i class="far fa-chart-bar"></i>차트</a
+            >
+          </li>
+          <li>
+            <a href="menu/02_genre/genre.html">
+              <i class="fas fa-water"></i>장르</a
+            >
+          </li>
+          <li>
+            <a href="menu/03_artist/artist.html"
+              ><i class="far fa-comments"></i>아티스트talk</a
+            >
+          </li>
+          <li>
+            <a href="menu/04_playList/playList.html">
+              <i class="fas fa-headphones-alt"></i>내 플레이리스트</a
+            >
+          </li>
+          <li>
+            <a href="menu/05_intro/intro.html"
+              ><i class="fas fa-rainbow"></i>사이트 소개</a
+            >
+          </li>
+
+          <li class="use_1">
+            <a href="menu/06_use/use.html">이용약관</a>
+          </li>
+          <li class="use_1">
+            <a href="menu/07_membership.html/membership.html"
+              >스뿌 멤버십 소개</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- menu end -->
+
+      <div class="main">
+
+        <header>
+          <div class="left">
+            <div class="logo"><a href="index.html">sfu</a></div>
+            <div class="sfu_n">
+              <a href="menu/05_intro/intro.html">SFU town</a>
+            </div>
+            <div class="sfu_n">
+              <a href="menu/04_playList/playList.html">SFU play</a>
+            </div>
+
+            <!-- mo ham_btn -->
+            <div class="ham_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="right">
+            <input
+              type="text"
+              placeholder="지금 주목해야할 트렌디한 신곡 플레이리스트를 확인해보세요."
+              ▼
+            />
+          </div>
+        </header>
+        <!-- main header end -->
+
+        <div class="tab_menu_wrap">
+          <div class="tab_menu_box">
+            <div class="tab_profile">
+              <div class="tab_pro_img">
+                <img src="images/ME.png" alt="profile_illust" />
+              </div>
+              <h5 class="tab_info_1">dkfjwl_3</h5>
+              <p class="tab_info_2">로그아웃 / 설정</p>
+            </div>
+            <ul class="tab_menu">
+              <li>
+                <a href="menu/01_chart/chart.html"
+                  ><i class="far fa-chart-bar"></i>차트</a
+                >
+              </li>
+              <li>
+                <a href="menu/02_genre/genre.html">
+                  <i class="fas fa-water"></i>장르</a
+                >
+              </li>
+              <li>
+                <a href="menu/03_artist/artist.html"
+                  ><i class="far fa-comments"></i>아티스트talk</a
+                >
+              </li>
+              <li>
+                <a href="menu/04_playList/playList.html">
+                  <i class="fas fa-headphones-alt"></i>내 플레이리스트</a
+                >
+              </li>
+              <li>
+                <a href="menu/05_intro/intro.html"
+                  ><i class="fas fa-rainbow"></i>사이트 소개</a
+                >
+              </li>
+
+              <ul class="tab_bottom_menu">
+                <li class="use_1">
+                  <a href="menu/07_membership/membership.html">스뿌 멤버십</a>
+                </li>
+                <li class="use_1">
+                  <a href="menu/06_use/use.html">이용약관</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <!--mo tab_menu end -->
+
+        <div class="pop_ad">
+
+          <div class="pop_left">
+            <div class="ad_img">
+              <img src="images/stereo png.png" alt="pop_ad_icon" />
+            </div>
+            <h2 class="ad_title">
+              첫가입 이벤트! 3개월 동안 100원의 혜택으로 스뿌와 함께해보세요.
+            </h2>
+          </div>
+
+          <div class="pop_right">
+            <img src="images/pop erase btn.png" alt="x_btn" />
+          </div>
+
+        </div>
+        <!-- pop_ad end -->
+
+        <div class="section section_1">
+          <h1>Today's Pick</h1>
+
+          <div class="arrow">
+            <span class="material-icons next">arrow_forward_ios</span>
+          </div>
+
+          <div class="slide_wrap">
+            <ul class="album_box">
+
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_1.png" alt="album_1" />
+                  </div>
+                  <div class="title">
+                    <div class="song">Feelings</div>
+                    <div class="singer">Lauv</div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_2.png" alt="album_2" />
+                  </div>
+                  <div class="title">
+                    <div class="song">Mean It (feat. Wrabel)</div>
+                    <div class="singer">Cash Cash</div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_3.png" alt="album_3" />
+                  </div>
+                  <div class="title">
+                    <div class="song">for him. (feat. Allday)</div>
+                    <div class="singer">Troye Sivan</div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_4.png" alt="album_4" />
+                  </div>
+                  <div class="title">
+                    <div class="song">Castle on the Hill</div>
+                    <div class="singer">Ed Sheeran</div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_5.png" alt="album_5" />
+                  </div>
+                  <div class="title">
+                    <div class="song">Symphony(feat. Zara Larsson)</div>
+                    <div class="singer">Clean Bandit</div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_6.png" alt="album_6" />
+                  </div>
+                  <div class="title">
+                    <div class="song">Older</div>
+                    <div class="singer">Sasha Sloan</div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_7.png" alt="album_7" />
+                  </div>
+                  <div class="title">
+                    <div class="song">So Sick (feat. Celsius)</div>
+                    <div class="singer">No Others</div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="album album_1">
+                  <div class="cover_1">
+                    <img src="images/album_8.png" alt="album_8" />
+                  </div>
+                  <div class="title">
+                    <div class="song">How I Want Ya (feat. Hailee Steinfeld)</div>
+                    <div class="singer">Hudson Thames</div>
+                  </div>
+                </div>
+              </li>
+  
+            </ul>
+          </div>
+
+        </div>
+        <!-- main section_1 end -->
+
+        <div class="section section_2">
+          <div class="two_wrap">
+            <div class="play_left">
+              <a href="menu/01_chart/chart.html">
+                <h1>SFU TOP100</h1>
+
+                <div class="chart_box">
+                  <h2>인기 차트</h2>
+
+                  <div class="rank_box">
+                    <div class="chart_rank rank_1">
+                      &nbsp; 1.
+                      <div class="rank_img">
+                        <img src="images/chart_img_1.png" alt="rank_1" />
+                      </div>
+
+                      <div class="rank_txt">
+                        <h3>Annabelle's Homework</h3>
+                        <p>Alec Benjamin</p>
+                      </div>
+
+                      <div class="con_icon">
+                        <span class="material-icons">play_arrow</span>
+                        <span class="material-icons">more_vert</span>
+                      </div>
+
+                    </div>
+
+                    <div class="chart_rank rank_2">
+                      &nbsp; 2.
+                      <div class="rank_img">
+                        <img src="images/chart_img_2.png" alt="rank_2" />
+                      </div>
+
+                      <div class="rank_txt">
+                        <h3>Dynamite</h3>
+                        <p>Sigrid</p>
+                      </div>
+
+                      <div class="con_icon">
+                        <span class="material-icons">play_arrow</span>
+                        <span class="material-icons">more_vert</span>
+                      </div>
+
+                    </div>
+
+                    <div class="chart_rank rank_3">
+                      &nbsp; 3.
+                      <div class="rank_img">
+                        <img src="images/chart_img_3.png" alt="rank_3" />
+                      </div>
+
+                      <div class="rank_txt">
+                        <h3>Drift Away (feat. Salvo)</h3>
+                        <p>Le Boeuf</p>
+                      </div>
+
+                      <div class="con_icon">
+                        <span class="material-icons">play_arrow</span>
+                        <span class="material-icons">more_vert</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chart_box">
+                  <h2>최신 차트</h2>
+
+                  <div class="rank_box">
+                    <div class="chart_rank rank_4">
+                      &nbsp; 1.
+                      <div class="rank_img">
+                        <img src="images/chart_img_4.png" alt="rank_1" />
+                      </div>
+
+                      <div class="rank_txt">
+                        <h3>smiling when I die</h3>
+                        <p>Sasha Sloan</p>
+                      </div>
+
+                      <div class="con_icon">
+                        <span class="material-icons">play_arrow</span>
+                        <span class="material-icons">more_vert</span>
+                      </div>
+
+                    </div>
+
+                    <div class="chart_rank rank_5">
+                      &nbsp; 2.
+                      <div class="rank_img">
+                        <img src="images/chart_img_5.png" alt="rank_2" />
+                      </div>
+
+                      <div class="rank_txt">
+                        <h3>Gravity (feat. JMR)</h3>
+                        <p>Jai Wolf</p>
+                      </div>
+
+                      <div class="con_icon">
+                        <span class="material-icons">play_arrow</span>
+                        <span class="material-icons">more_vert</span>
+                      </div>
+
+                    </div>
+
+                    <div class="chart_rank rank_6">
+                      &nbsp; 3.
+                      <div class="rank_img">
+                        <img src="images/chart_img_6.png" alt="rank_3" />
+                      </div>
+
+                      <div class="rank_txt">
+                        <h3>Viva La Vida</h3>
+                        <p>coldplay</p>
+                      </div>
+
+                      <div class="con_icon">
+                        <span class="material-icons">play_arrow</span>
+                        <span class="material-icons">more_vert</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="play_right">
+              <h1>My Player</h1>
+              <div class="play_box">
+                <div class="inner_play">
+                  <div class="round_cover">
+                    <img src="images/img1.jpg" alt="album_cover" />
+                  </div>
+
+                  <div class="txt_cover">
+                    <h4 class="cover_song">Annabell's Homework</h4>
+                    <p class="cover_singer">Alec Benjamin</p>
+                  </div>
+
+                  <div class="audio_cover">
+                    <button class="pre_btn">
+                      <span class="material-icons">skip_previous</span>
+                    </button>
+                    <button class="pp_btn">
+                      <span class="material-icons" id="playpausebtn"
+                        >play_arrow</span
+                      >
+                    </button>
+                    <button class="next_btn">
+                      <span class="material-icons">skip_next</span>
+                    </button>
+                  </div>
+
+                  <input
+                    id="seekslider"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
+                  <div id="time_box">
+                    <span id="curtimetext">00:00</span>
+                    <span id="durtimetext">00:00</span>
+                  </div>
+
+                  <div class="user_cover">
+                    <div class="user_con">
+                      <img src="images/img12.jpg" alt="d" />
+                    </div>
+
+                    <div class="user_names">dkfjwl_3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main section_2 end -->
+
+        <div class="section section_3">
+          <div class="ad_wrap">
+            <div class="ad_txt">
+              <h2 class="ad_title">Song For U</h2>
+              <p class="ad_con">나만을 위한 플레이리스트는 <span> 오직 SFU 에서만!<span></p>
+            </div>
+
+            <a href="menu/07_membership/membership.html" class="btn">
+              <p>바로 가기</p>
+            </a>
+          </div>
+        </div>
+        <!-- main section_3 end -->
+       
+        <div class="section section_4">
+
+          <h1>Today's Topic</h1>
+          
+          <div class="slide_wrap_4">
+  
+            <div class="talk_box">
+
+              <div class="item">
+                  <a href="https://koreajoongangdaily.joins.com/2021/11/18/entertainment/kpop/BTS-Coldplay-My-Universe/20211118100139037.html" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_1.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">Perform ‘My Universe’ at AMAs</div>
+                        <div class="singer">BTS X Coldplay</div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="item">
+                  <a href="http://www.lcnews.co.kr/news/articleView.html?idxno=13121" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_2.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">빅히트 자회사 위버스, 커뮤니티 오픈</div>
+                        <div class="singer">Alec Benjamin</div>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="item">
+                  <a href="https://sports.donga.com/article/all/20211209/110690202/1" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_3.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">에드시런, '2021 MAMA'</div>
+                        <div class="singer">
+                          Ed Sheeran
+                        </div>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="item">
+                  <a href="http://enter.etoday.co.kr/view/news_view.php?varAtcId=209007" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_4.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">'Try Again', DallasK X Lauv</div>
+                        <div class="singer">Lauv</div>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="item">
+                  <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=104&oid=077&aid=0005351010" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_5.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">Grammy nominations 2021</div>
+                        <div class="singer">Katy Perry</div>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="item">
+                  <a href="https://www.idolator.com/7816819/sasha-sloans-dancing-with-your-ghost-is-a-lullaby-about-loss?chrome=1" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_6.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">"Dancing With Your Ghost"</div>
+                        <div class="singer">Sasha Sloan</div>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="item">
+                  <a href="https://flaunt.com/content/brynn-elliott-opens-up-even-more-on-can-i-be-real" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_7.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">The Can I be Real Tour 2021</div>
+                        <div class="singer">Brynn Elliott</div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="item">
+                  <a href="https://www.nme.com/news/music/sigrid-teases-the-arrival-of-new-track-it-gets-dark-3127919" class="album album_4">
+                      <div class="cover_4">
+                        <img src="../sfu_6/images/art_album_8.png" alt="album_1" />
+                      </div>
+                      <div class="title">
+                        <div class="song">New Track "It Gets Dark"</div>
+                        <div class="singer">Sigrid</div>
+                      </div>
+                  </a>
+              </div>
+
+            </div>
+  
+          </div>
+  
+          <div class="progress_bar">
+              <div class="prog_bar_inner"></div>
+          </div>
+  
+        </div>
+        
+        <!-- main section_4 end -->
+
+        <footer>
+          <div class="in_footer">
+            <h5> 
+              회사소개 |
+              <span><a href="menu/06_use/use.html">이용약관</a></span> |
+              개인정보 처리방침 | 청소년 보호정책 | 사업자정보 확인
+            </h5>
+            <h6>
+              제작자 : 김은지, 이유빈, 한연휘 / 사업자 등록번호 :
+              2934-23355-3993 제작일 : 14days / 2021-12-10 to 2021-12-24
+            </h6>
+            <p>우리의 깃헙 주소 넣기</p>
+          </div>
+        </footer>
+        <!-- footer end -->
+
+      </div>
+      <!-- main end -->
+
+    </div>
+
+    <a href="#" class="top_btn">
+      <span class="material-icons">keyboard_capslock</span>        
+    </a>
+
+    <div class="mainPlayerBar">
+      <!--- left part --->
+      <div class="playerBar_left">
+        <!--- song img --->
+        <img id="track_image" />
+      </div>
+
+      <!--- right part --->
+      <div class="playerBar_right">
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+        <!--- song title & artist name --->
+        <p id="title">title.mp3</p>
+        <p id="artist">Artist name</p>
+
+        <!--- middle part --->
+        <div class="middle">
+          <button onclick="previous_song()" id="pre">
+            <i class="fa fa-step-backward" aria-hidden="true"></i>
+          </button>
+          <button onclick="justplay()" id="play">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </button>
+          <button onclick="next_song()" id="next">
+            <i class="fa fa-step-forward" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!--- song duration part --->
+        <div class="duration">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="duration_slider"
+            onchange="change_duration()"
+          />
+        </div>
+        <button id="auto" onclick="autoplay_switch()">
+          Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+        </button>
+
+        <div class="playerBar_volume">
+          <p id="volume_show">90</p>
+          <i
+            class="fa fa-volume-up"
+            aria-hidden="true"
+            onclick="mute_sound()"
+            id="volume_icon"
+          ></i>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="90"
+            onchange="volume_change()"
+            id="volume"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- main fix player end -->
+
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/MainPlayerBar.js"></script>
+
+  </body>
+</html>

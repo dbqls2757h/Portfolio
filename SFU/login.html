@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Validated Login Form</title>
+    
+    <!-- <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/login.css">
+
+  </head>
+
+  <body>
+
+    <div class="wrap">
+
+      <h1 class="label">sfu</h1>
+
+      <div class="ran_musician">
+        <img src="images/log_music.jpg" alt="random">
+      </div>
+
+      <div class="container">
+        <form
+          class="login_form"
+          action="index.html"
+          method="post"
+          name="form"
+          onsubmit="return validated()"
+        >
+          <div class="font"></div>
+          <input
+            autocomplete="off"
+            type="text"
+            name="email"
+            placeholder="아이디 (이메일)"
+          />
+          <div id="email_error">이메일을 입력해주세요.</div>
+          <div class="font font2"></div>
+          <input type="password" name="password" placeholder="비밀번호" />
+          <div id="pass_error">비밀번호를 입력해주세요.</div>
+          <button type="submit">Login</button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+
+  </body>
+</html>
