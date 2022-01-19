@@ -784,6 +784,11 @@
   .section5 {
     height: 100vh;
     background-color: #f8f5f0;
+    padding-bottom: 140px;
+  }
+
+  .section5 > .container {
+    padding-bottom: 140px;
   }
 
   .sec5_title {
@@ -812,16 +817,17 @@
   }
 
   .sec5_con_wrap {
-    width: 575px;
+    width: 490px;
     height: auto;
     margin: 0 auto;
     position: relative;
     margin-top: 100px;
+    padding-bottom: 50px;
   }
 
   .sec5_con {
-    width: 280px;
-    height: 250px;
+    width: 230px;
+    height: 220px;
     background-color: #fff;
     border-radius: 15px;
     float: left;
